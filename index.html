@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <select id="selectButton" width="100"></select>
+    <style>
+      .tooltip {
+        position: absolute;
+        text-align: left;
+        width: 130px;
+        height: 50px;
+        padding: 5px;
+        font: 12px Arial, Helvetica, sans-serif;
+        color: black;
+        background: white;
+        border: 1px;
+        border-radius: 1px;
+        border-style: solid;
+        pointer-events: none;
+        stroke: black;
+      }
+      .tooltip2 {
+        position: absolute;
+        text-align: center;
+        width: 130px;
+        padding: 15px;
+        font: 17px Arial, Helvetica, sans-serif;
+        color: black;
+        background: white;
+        border: 1px;
+        border-radius: 1px;
+        border-style: solid;
+        pointer-events: none;
+        stroke: black;
+      }
+      line {
+        stroke: black;
+      }
+
+      line:hover {
+        stroke: 1.5;
+        stroke: black;
+        stroke-opacity: 1;
+      }
+
+      .content {
+        display: flex;
+      }
+    </style>
+
+    <script src="//d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <div id="content">
+      <svg width="1200px" height="1200px">
+        <g class="map"></g>
+      </svg>
+
+      <svg width="1200px" height="1200px">
+        <g class="map2"></g>
+      </svg>
+    </div>
+
+    <script src="map_visualization.js"></script>
+    <script src="graph_visualization.js"></script>
+  </body>
+</html>
